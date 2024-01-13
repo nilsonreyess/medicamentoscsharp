@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Medicamentos
 {
-    internal class Pedido
+    public class Pedido
     {
         private string Medicamento;
         private string TipoMedicamento;

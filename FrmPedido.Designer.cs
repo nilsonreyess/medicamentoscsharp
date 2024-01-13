@@ -64,7 +64,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(60, 105);
+            label2.Location = new Point(12, 105);
             label2.Name = "label2";
             label2.Size = new Size(116, 21);
             label2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(60, 186);
+            label3.Location = new Point(12, 186);
             label3.Name = "label3";
             label3.Size = new Size(107, 21);
             label3.TabIndex = 3;
@@ -84,7 +84,7 @@
             // 
             LblMedicamento.AutoSize = true;
             LblMedicamento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblMedicamento.Location = new Point(60, 130);
+            LblMedicamento.Location = new Point(12, 130);
             LblMedicamento.Name = "LblMedicamento";
             LblMedicamento.Size = new Size(105, 21);
             LblMedicamento.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             LblDespachar.AutoSize = true;
             LblDespachar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblDespachar.Location = new Point(60, 214);
+            LblDespachar.Location = new Point(12, 214);
             LblDespachar.Name = "LblDespachar";
             LblDespachar.Size = new Size(107, 21);
             LblDespachar.TabIndex = 5;
@@ -139,6 +139,7 @@
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmPedido";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Pedido al distribuidor ...";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

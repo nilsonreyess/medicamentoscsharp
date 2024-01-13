@@ -15,6 +15,9 @@ namespace Medicamentos
         public FrmPedido(Pedido pedido)
         {
             InitializeComponent();
+
+            this.Text = "Pedido al distribuidor " + pedido.GetDistribuidor();
+            Imprimir(pedido);
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -24,8 +27,14 @@ namespace Medicamentos
 
         private void BtnEnviar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Pedido enviado.");
+            MessageBox.Show("Pedido enviado.","Resultado",MessageBoxButtons.OK,MessageBoxIcon.Information);
             this.Close();
+        }
+
+        private void Imprimir(Pedido pedido)
+        {
+            LblMedicamento.Text = pedido.GetCantidad() + " unidades del " + pedido.GetTipoMedicamento() + "\n" + pedido.GetMedicamento();
+            LblDespachar.Text = pedido.GetDespachar();
         }
     }
 }

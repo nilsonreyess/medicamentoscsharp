@@ -21,12 +21,12 @@ namespace Medicamentos
 
         private void BtnBorrar_Click(object sender, EventArgs e)
         {
-            OcultarErrores();
             Limpiar();
         }
 
         private void Limpiar()
         {
+            OcultarErrores();
             TxtMedicamento.Text = string.Empty;
             CmbMedicamento.Text = "Seleccione";
             NumCantidad.Value = 1;
@@ -53,8 +53,9 @@ namespace Medicamentos
                     pedido.SetDespachar(ChkSucursal.Text);
                 }
 
-                using FrmPedido pedir = new FrmPedido(pedido);
+                using FrmPedido pedir = new(pedido);
                 pedir.ShowDialog();
+                Limpiar();
                
             }
         }
